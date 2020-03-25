@@ -25,12 +25,12 @@ const cheesyjs = require('cheesy.js');
 const client = new cheesyjs();
 
 client.on('loginReady', () => {
-    client.setCommunity(15);
-    client.login('nickname', 'password', "roomName"); 
+	client.setCommunity(15);
+	client.login('nickname', 'password', "roomName");
 });
 
 client.on('logged', (nickname, pcode) => {
-    console.log(nickname+' connected');
+	console.log(nickname+' connected');
 });
 
 client.start("api_tfmid", "api_token");
