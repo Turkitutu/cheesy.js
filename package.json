@@ -15,7 +15,8 @@
     "tfm",
     "transformage",
     "client",
-    "transformice"
+    "transformice",
+    "chessy.js"
   ],
   "author": {"name" : "Yatsuki#4775", "email": "turkitututfm@gmail.com"},
   "license": "ISC",
