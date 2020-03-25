@@ -1,0 +1,24 @@
+{
+  "name": "CheeseJs",
+  "version": "1.0.0b",
+  "description": "A NodeJs client for Transformice.",
+  "main": "./lib/client.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Turkitutu/cheeseJs"
+  },
+  "keywords": [
+    "bots",
+    "tfm",
+    "transformage",
+    "client",
+    "transformice"
+  ],
+  "author": {"name" : "Yatsuki#4775", "email": "turkitututfm@gmail.com"},
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "iconv-lite": "^0.5.1",
+    "request": "^2.88.2"
+  }
+}
