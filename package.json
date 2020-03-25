@@ -1,5 +1,5 @@
 {
-  "name": "CheeseJs",
+  "name": "cheesejs",
   "version": "1.0.0b",
   "description": "A NodeJs client for Transformice.",
   "main": "./lib/client.js",
