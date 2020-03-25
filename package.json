@@ -1,11 +1,14 @@
 {
-  "name": "cheesejs",
+  "name": "cheesy.js",
   "version": "1.0.0b",
   "description": "A NodeJs client for Transformice.",
   "main": "./lib/client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Turkitutu/cheeseJs"
+    "url": "https://github.com/Turkitutu/cheesy.js"
   },
   "keywords": [
     "bots",
