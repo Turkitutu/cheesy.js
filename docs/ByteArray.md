@@ -30,6 +30,20 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 
 # Methods
 
+### <a id=constructor></a>ByteArray(buffer)
+
+>Constructor.
+>
+>**Parameters :**
+>| Parameter | Type | Optional | Default | Description |
+>| :-: | :-: | :-: | :-: | :-- |
+>| buffer | [`Buffer`](https://nodejs.org/api/buffer.html) | ✔ |  | Array of bytes. |
+>
+>
+> **Example :**
+ >```js
+>const packet = new ByteArray();
+>```
 ### <a id=expand></a>ByteArray.expand(value)
 
 >Expands the buffer
@@ -55,7 +69,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >
 ### <a id=readbytes></a>ByteArray.readBytes(bytes, offset, length)
 
->Reads the number of data bytes, specified by the length parameter, from the byte stream
+>Reads the number of data bytes, specified by the length parameter, from the byte stream.
 >
 >**Parameters :**
 >| Parameter | Type |

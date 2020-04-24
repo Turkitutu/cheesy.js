@@ -33,7 +33,7 @@
 | roomMessage | 1542 |
 | roomChange | 1542 |
 ## <a id=chatcommunity></a>chatCommunity
-###### The ids of all chat community
+###### The ids of all chat communities
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
@@ -69,7 +69,7 @@
 | az | 30 |
 | pt | 31 |
 ## <a id=community></a>community
-###### The ids of all community
+###### The ids of all communities
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
@@ -153,7 +153,7 @@
 | derp | 8 |
 | OMG | 9 |
 ## <a id=game></a>game
-###### The ids of all the Atelier801 games.
+###### The ids of all Atelier801's games.
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
@@ -165,7 +165,7 @@
 | nekodancer | 15 |
 | deadmaze | 17 |
 ## <a id=gender></a>gender
-###### The grander id.
+###### The ids of all the genders.
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
@@ -173,7 +173,7 @@
 | female | 1 |
 | male | 2 |
 ## <a id=role></a>role
-###### The staff roles.
+###### The ids of all the staff roles.
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
@@ -183,7 +183,7 @@
 | mapcrew | 11 |
 | funcorp | 13 |
 ## <a id=roommode></a>roomMode
-###### The room modes.
+###### The ids of all the room modes.
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
@@ -197,7 +197,7 @@
 | village | 16 |
 | module | 18 |
 ## <a id=whisperstate></a>whisperState
-###### The whisper state.
+###### The ids of all the whisper states.
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
@@ -205,10 +205,10 @@
 | disabledPublic | 2 |
 | disabledAll | 3 |
 ## <a id=ciphermethod></a>cipherMethod
-###### The cipher method.
+###### The ids of the cipher method.
 
 | Index | Value [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
-| without | 0 |
+| none | 0 |
 | xor | 1 |
 | xxtea | 2 |

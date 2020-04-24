@@ -24,7 +24,7 @@ Represents a client that connects to Transformice.
 
 ### <a id=handlepacket></a>Client.handlePacket(connection, packet)
 
->Handles the known packets and emits events..
+>Handles the known packets and emits events.
 >
 >**Parameters :**
 >| Parameter | Type | Description |
@@ -34,7 +34,7 @@ Represents a client that connects to Transformice.
 >
 ### <a id=login></a>Client.login(nickname, password, room)
 
->Log in the game.
+>Log in to the game.
 >
 >**Parameters :**
 >| Parameter | Type | Optional | Default | Description |

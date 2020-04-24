@@ -22,6 +22,11 @@ Represents a client that connects to Transformice.
 >| client | [`Client`](Client.md) | The client. |
 >| name | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Connection name. |
 >
+>
+> **Example :**
+ >```js
+>const conn = new Connection(client, 'connectionName');
+>```
 ### <a id=connect></a>Connection.connect(host, port)
 
 >Connects the socket.
@@ -41,7 +46,7 @@ Represents a client that connects to Transformice.
 >| :-: | :-: | :-: | :-: | :-- |
 >| identifier | [`enums.identifiers`](Enums.md#identifiers) |  |  | The identifier of the packet. |
 >| packet | [`ByteArray`](Bytearray.md) |  |  | The packet. |
->| method | [`enums.cipherMethod`](Enums.md#cipherMethod) | ✔ | enums.cipherMethod.without | The algorithm method to cipher the packet with it. |
+>| method | [`enums.cipherMethod`](Enums.md#cipherMethod) | ✔ | enums.cipherMethod.none | The algorithm method to cipher the packet with it. |
 >
 ### <a id=close></a>Connection.close()
 
