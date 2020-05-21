@@ -35,5 +35,14 @@ client.on('logged', (nickname, pcode) => {
 	console.log(nickname+' connected');
 });
 
+client.on('roomMessage', (player, community, message) => {
+    if (client.nickname == player.nickname)
+		return;
+		
+	const p = client.room.getPlayer('nickname', message);
+	if (p)
+		client.sendRoomMessage(p.look);
+});
+
 client.start("api_tfmid", "api_token");
 ```
