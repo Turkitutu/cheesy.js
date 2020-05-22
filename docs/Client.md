@@ -17,6 +17,7 @@ Represents a client that connects to Transformice.
 * [sendHandshake](#sendHandshake)
 * [setCommunity](#setCommunity)
 * [joinTribeHouse](#joinTribeHouse)
+* [loadLua](#loadLua)
 * [sendRoomMessage](#sendRoomMessage)
 * [startHeartbeat](#startHeartbeat)
 * [start](#start)
@@ -25,6 +26,7 @@ Represents a client that connects to Transformice.
 * [loginReady](#loginReady)
 * [logged](#logged)
 * [ready](#ready)
+* [luaLog](#luaLog)
 * [roomMessage](#roomMessage)
 * [roomChange](#roomChange)
 * [roomUpdate](#roomUpdate)
@@ -130,6 +132,15 @@ Represents a client that connects to Transformice.
 
 >Joins the tribe house.
 >
+### <a id=loadlua></a>Client.loadLua(script)
+
+>Load a lua script in the room.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| script |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The script code. |
+>
 ### <a id=sendroommessage></a>Client.sendRoomMessage(message)
 
 >Sends a message to the client's room.
@@ -187,6 +198,15 @@ client.on('eventName', (property) => {
 
 >Emitted when the client is connected to the community platform.
 >
+### <a id=lualog></a>luaLog
+
+>Emitted when the client receives lua logs or errors from `#Lua` chat.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | a log message |
+>
 ### <a id=roommessage></a>roomMessage
 
 >Emitted when the client is connected to the community platform.
@@ -205,8 +225,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| before |  [`room`](Room.md) | The old room. |
->| after |  [`room`](Room.md) | The new room. |
+>| before |  [`Room`](Room.md) | The old room. |
+>| after |  [`Room`](Room.md) | The new room. |
 >
 >
 > **Example :**

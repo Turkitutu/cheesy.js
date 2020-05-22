@@ -24,6 +24,7 @@
 | loginReady | 7230 |
 | joinTribeHouse | 4097 |
 | loadLua | 7425 |
+| luaChatLog | 7430 |
 | loginSend | 6664 |
 | modList | 6661 |
 | os | 7185 |
