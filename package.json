@@ -1,6 +1,6 @@
 {
 	"name": "cheesy.js",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A NodeJs client for Transformice.",
 	"main": "./lib/client.js",
 	"scripts": {
