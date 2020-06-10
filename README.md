@@ -3,6 +3,8 @@
 cheesy is an NodeJs client for  [Transformice](https://www.transformice.com/) that allows developers to make bots easily.
 It uses an API endpoint to get the keys needed to connect to the game.
 
+Join the **_[Fifty Shades of Lua](https://discord.gg/qmdryEB)_** [discord](https://discordapp.com/) server to discuss about this API and to receive special support.
+
 ## Authentication  Keys Endpoint
 
 This API depends on an [endpoint](https://api.tocu.tk/get_transformice_keys.php) that gives you access to the Transformice encryption keys.
@@ -25,14 +27,15 @@ const cheesyjs = require('cheesy.js');
 const client = new cheesyjs();
 
 client.on('loginReady', () => {
-	client.setCommunity(15);
+	client.setCommunity(cheesyjs.enums.community.en);
 	client.login('nickname', 'password', "roomName");
 });
 
-client.on('logged', (nickname, pcode) => {
-	console.log(nickname+' connected');
+client.on('roomMessage', (player, community, message) => {
+    if (client.nickname == player.nickname)
+		return;
+	client.sendRoomMessage(player.look);
 });
 
 client.start("api_tfmid", "api_token");
 ```
-
