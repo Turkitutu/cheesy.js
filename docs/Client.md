@@ -12,6 +12,7 @@ Represents a client that connects to Transformice.
 * [community](#community)
 * [pcode](#pcode)
 #### Methods 
+* [handleOldPacket](#handleOldPacket)
 * [handlePacket](#handlePacket)
 * [login](#login)
 * [sendHandshake](#sendHandshake)
@@ -20,9 +21,10 @@ Represents a client that connects to Transformice.
 * [loadLua](#loadLua)
 * [sendRoomMessage](#sendRoomMessage)
 * [startHeartbeat](#startHeartbeat)
-* [start](#start)
+* [async start](#async start)
 * [disconnect](#disconnect)
 #### Events
+* [roomPlayerLeft](#roomPlayerLeft)
 * [loginReady](#loginReady)
 * [logged](#logged)
 * [ready](#ready)
@@ -88,6 +90,16 @@ Represents a client that connects to Transformice.
 
 # Methods
 
+### <a id=handleoldpacket></a>Client.handleOldPacket(connection, packet)
+
+>Handles the old packets and emits events.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| connection |  [`Connection`](Connection.md) | The connection that received. |
+>| packet |  [`ByteArray`](Bytearray.md) | The packet. |
+>
 ### <a id=handlepacket></a>Client.handlePacket(connection, packet)
 
 >Handles the known packets and emits events.
@@ -154,7 +166,7 @@ Represents a client that connects to Transformice.
 
 >Sends a packet every 15 seconds to stay connected to the game.
 >
-### <a id=start></a>Client.start(api_tfmid, api_token)
+### <a id=async start></a>Client.async start(api_tfmid, api_token)
 
 >Starts the client.
 >
@@ -180,6 +192,15 @@ client.on('eventName', (property) => {
 }
 ```
 
+### <a id=roomplayerleft></a>roomPlayerLeft
+
+>Emitted when a player left the room. 
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| player |  [`Player`](Player.md) | The player who left. |
+>
 ### <a id=loginready></a>loginReady
 
 >Emitted when the client can login on the game. 
@@ -209,14 +230,12 @@ client.on('eventName', (property) => {
 >
 ### <a id=roommessage></a>roomMessage
 
->Emitted when the client is connected to the community platform.
+>Emitted when a player sends a message in the room.
 >
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](Player.md) | The player who sent the message. |
->| community |  [`enums.chatCommunity`](Enums.md#chatCommunity) | The player's community. |
->| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message content. |
+>| message |  [`RoomMessage`](Roommessage.md) | The message. |
 >
 ### <a id=roomchange></a>roomChange
 

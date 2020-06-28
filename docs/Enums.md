@@ -5,6 +5,7 @@
 
 | Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
+| oldPacket | 257 |
 | bulle | 15363 |
 | bulleConnection | 11265 |
 | cafeData | 7720 |
@@ -35,6 +36,12 @@
 | roomChange | 1301 |
 | roomPlayerList | 36865 |
 | roomNewPlayer | 36866 |
+## <a id=oldidentifiers></a>oldIdentifiers
+###### The old identifiers of the packets.
+
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+| :-: | :-: |
+| roomPlayerLeft | 2055 |
 ## <a id=chatcommunity></a>chatCommunity
 ###### The ids of all chat communities
 

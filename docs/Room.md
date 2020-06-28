@@ -7,6 +7,8 @@ Represents a room.
 * [isPublic](#isPublic)
 #### Methods 
 * [getPlayer](#getPlayer)
+* [removePlayer](#removePlayer)
+* [updatePlayer](#updatePlayer)
 
 
 
@@ -47,3 +49,21 @@ Represents a room.
 >const player = client.room.getPlayer('nickname', 'Name#0000');
 >console.log(player.look);
 >```
+### <a id=removeplayer></a>Room.removePlayer(player)
+
+>Removes player the player from room playerlist.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| player |  [`Player`](Player.md) | The player. |
+>
+### <a id=updateplayer></a>Room.updatePlayer(player)
+
+>Adds or updates the player in room playerlist.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| player |  [`Player`](Player.md) | The player. |
+>
