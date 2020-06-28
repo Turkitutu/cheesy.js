@@ -31,10 +31,10 @@ client.on('loginReady', () => {
 	client.login('nickname', 'password', "roomName");
 });
 
-client.on('roomMessage', (player, community, message) => {
-    if (client.nickname == player.nickname)
+client.on('roomMessage', (message) => {
+    if (client.nickname == message.author.nickname)
 		return;
-	client.sendRoomMessage(player.look);
+	client.sendRoomMessage(message.author.look);
 });
 
 client.start("api_tfmid", "api_token");
