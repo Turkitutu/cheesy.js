@@ -14,17 +14,22 @@ Represents a client that connects to Transformice.
 #### Methods 
 * [handleOldPacket](#handleOldPacket)
 * [handlePacket](#handlePacket)
+* [handleTribulle](#handleTribulle)
+* [sendTribullePacket](#sendTribullePacket)
 * [login](#login)
 * [sendHandshake](#sendHandshake)
 * [setCommunity](#setCommunity)
 * [joinTribeHouse](#joinTribeHouse)
 * [loadLua](#loadLua)
 * [sendRoomMessage](#sendRoomMessage)
+* [sendCommand](#sendCommand)
+* [sendWhisper](#sendWhisper)
 * [startHeartbeat](#startHeartbeat)
 * [async start](#async start)
 * [disconnect](#disconnect)
 #### Events
 * [roomPlayerLeft](#roomPlayerLeft)
+* [rawOldPacket](#rawOldPacket)
 * [loginReady](#loginReady)
 * [logged](#logged)
 * [ready](#ready)
@@ -34,6 +39,9 @@ Represents a client that connects to Transformice.
 * [roomUpdate](#roomUpdate)
 * [roomPlayerUpdate](#roomPlayerUpdate)
 * [roomPlayerJoin](#roomPlayerJoin)
+* [rawPacket](#rawPacket)
+* [whisper](#whisper)
+* [rawTribulle](#rawTribulle)
 * [disconnect](#disconnect)
 * [connect](#connect)
 
@@ -110,6 +118,26 @@ Represents a client that connects to Transformice.
 >| connection |  [`Connection`](Connection.md) | The connection that received. |
 >| packet |  [`ByteArray`](Bytearray.md) | The packet. |
 >
+### <a id=handletribulle></a>Client.handleTribulle(packet, packet)
+
+>Handles the community platform packets and emits events.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| packet |  [`ByteArray`](Bytearray.md) | The community platform code. |
+>| packet |  [`ByteArray`](Bytearray.md) | The community platform packet. |
+>
+### <a id=sendtribullepacket></a>Client.sendTribullePacket(code, packet)
+
+>Sends a packet to the community platform (tribulle).
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| code |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The community platform code. |
+>| packet |  [`ByteArray`](Bytearray.md) | The community platform packet. |
+>
 ### <a id=login></a>Client.login(nickname, password, room)
 
 >Log in to the game.
@@ -162,6 +190,25 @@ Represents a client that connects to Transformice.
 >| :-: | :-: | :-- |
 >| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
 >
+### <a id=sendcommand></a>Client.sendCommand(message)
+
+>Sends a server command.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The command message (without the `/`). |
+>
+### <a id=sendwhisper></a>Client.sendWhisper(nickname, message)
+
+>Sends a whisper message to a player.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| nickname |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The nickname of the player. |
+>| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
+>
 ### <a id=startheartbeat></a>Client.startHeartbeat()
 
 >Sends a packet every 15 seconds to stay connected to the game.
@@ -200,6 +247,17 @@ client.on('eventName', (property) => {
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
 >| player |  [`Player`](Player.md) | The player who left. |
+>
+### <a id=rawoldpacket></a>rawOldPacket
+
+>Emitted when a new old packet received.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| connection |  [`Connection`](Connection.md) | The connection which sent the packet (`main` or `bulle`). |
+>| ccc |  [`enums.oldIdentifiers`](Enums.md#oldIdentifiers) | The old identifier code of the packet. |
+>| data |  [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | The data. |
 >
 ### <a id=loginready></a>loginReady
 
@@ -282,6 +340,36 @@ client.on('eventName', (property) => {
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
 >| player |  [`Player`](Player.md) | The player. |
+>
+### <a id=rawpacket></a>rawPacket
+
+>Emitted when a new packet received from main or bulle connection.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| connection |  [`Connection`](Connection.md) | The connection which sent the packet (`main` or `bulle`). |
+>| ccc |  [`enums.identifiers`](Enums.md#identifiers) | The identifier code of the packet. |
+>| packet |  [`ByteArray`](Bytearray.md) | The packet. |
+>
+### <a id=whisper></a>whisper
+
+>Emitted when a player sends a whisper message to the client.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| message |  [`WhisperMessage`](Whispermessage.md) | The message. |
+>
+### <a id=rawtribulle></a>rawTribulle
+
+>Emitted when a new community platform packet received.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| code |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The community platform code. |
+>| packet |  [`ByteArray`](Bytearray.md) | The packet. |
 >
 ### <a id=disconnect></a>disconnect
 

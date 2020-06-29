@@ -2,6 +2,7 @@
 Represents a room.
 
 #### Properties 
+* [client](#client)
 * [name](#name)
 * [playerList](#playerList)
 * [isPublic](#isPublic)
@@ -9,11 +10,17 @@ Represents a room.
 * [getPlayer](#getPlayer)
 * [removePlayer](#removePlayer)
 * [updatePlayer](#updatePlayer)
+* [sendMessage](#sendMessage)
 
 
 
 # Properties 
 
+### <a id=client></a>.client
+
+>The client.
+>
+>**Type:**  [`Client`](Client.md)
 ### <a id=name></a>.name
 
 >The room name.
@@ -66,4 +73,13 @@ Represents a room.
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
 >| player |  [`Player`](Player.md) | The player. |
+>
+### <a id=sendmessage></a>Room.sendMessage(message)
+
+>Sends a message to the room.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
 >

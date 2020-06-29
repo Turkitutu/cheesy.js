@@ -1,10 +1,11 @@
-# RoomMessage's Documentation
-Represents a room message.
+# WhisperMessage's Documentation
+Represents a message.
 
 #### Properties 
 * [client](#client)
 * [content](#content)
 * [author](#author)
+* [sentTo](#sentTo)
 * [community](#community)
 #### Methods 
 * [reply](#reply)
@@ -25,9 +26,14 @@ Represents a room message.
 >**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=author></a>.author
 
->The author.
+>The author name.
 >
->**Type:**  [`Player`](Player.md)
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+### <a id=sentto></a>.sentTo
+
+>The player name who sent to them.
+>
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=community></a>.community
 
 >The author's community ID.
@@ -37,9 +43,9 @@ Represents a room message.
 
 # Methods
 
-### <a id=reply></a>RoomMessage.reply(message)
+### <a id=reply></a>WhisperMessage.reply(message)
 
->Reply the author with a message.
+>Reply the author with a whisper message.
 >
 >**Parameters :**
 >| Parameter | Type | Description |
@@ -49,8 +55,8 @@ Represents a room message.
 >
 > **Example :**
  >```js
->client.on('roomMessage', (message) => {
->	if (client.nickname == message.author.nickname)
+>client.on('whisper', (message) => {
+>	if (client.nickname == message.author)
 >		return;
 >	message.reply('Hello');
 >}
