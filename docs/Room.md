@@ -2,16 +2,25 @@
 Represents a room.
 
 #### Properties 
+* [client](#client)
 * [name](#name)
 * [playerList](#playerList)
 * [isPublic](#isPublic)
 #### Methods 
 * [getPlayer](#getPlayer)
+* [removePlayer](#removePlayer)
+* [updatePlayer](#updatePlayer)
+* [sendMessage](#sendMessage)
 
 
 
 # Properties 
 
+### <a id=client></a>.client
+
+>The client.
+>
+>**Type:**  [`Client`](Client.md)
 ### <a id=name></a>.name
 
 >The room name.
@@ -47,3 +56,30 @@ Represents a room.
 >const player = client.room.getPlayer('nickname', 'Name#0000');
 >console.log(player.look);
 >```
+### <a id=removeplayer></a>Room.removePlayer(player)
+
+>Removes player the player from room playerlist.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| player |  [`Player`](Player.md) | The player. |
+>
+### <a id=updateplayer></a>Room.updatePlayer(player)
+
+>Adds or updates the player in room playerlist.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| player |  [`Player`](Player.md) | The player. |
+>
+### <a id=sendmessage></a>Room.sendMessage(message)
+
+>Sends a message to the room.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
+>
