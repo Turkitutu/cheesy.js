@@ -10,6 +10,7 @@ Represents a client that connects to Transformice.
 * [playingTime](#playingTime)
 * [connectionTime](#connectionTime)
 * [community](#community)
+* [language](#language)
 * [pcode](#pcode)
 #### Methods 
 * [handleOldPacket](#handleOldPacket)
@@ -89,6 +90,11 @@ Represents a client that connects to Transformice.
 >The client's community code.
 >
 >**Type:**  [`enums.community`](Enums.md#community)
+### <a id=language></a>.language
+
+>The language suggested by the server.
+>
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=pcode></a>.pcode
 
 >The client's temporary code.

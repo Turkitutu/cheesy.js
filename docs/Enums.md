@@ -17,7 +17,7 @@
 | command | 1562 |
 | community | 2050 |
 | logged | 6658 |
-| correctVersion | 6659 |
+| handshakeOk | 6659 |
 | emote | 2049 |
 | emoticon | 2053 |
 | heartbeat | 6682 |
