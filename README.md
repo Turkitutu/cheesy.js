@@ -18,6 +18,7 @@ To use it you will need a token which you can get by [applying through this form
 
 You can install cheesy.js using npm:
 `npm install cheesy.js`
+
 ![/!\\](https://i.imgur.com/HQ188PK.png) **Versions under 2.0.4 are no longer working due to internal changes of the game.**<br>
 
 ## Example
