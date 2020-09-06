@@ -1,5 +1,15 @@
 # Changelogs
 
+## v2.0.5 - 06/29/2020
+
+## News
+- Add Client.joinRoom method.
+
+## v2.0.4 - 09/06/2020
+
+## Changes
+- Transformace adds new string `language` to the handshake structure (All previous versions won't work).
+
 ## v2.0.0 - 06/29/2020
 
 ## News
