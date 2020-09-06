@@ -24,6 +24,7 @@ Represents a client that connects to Transformice.
 * [loadLua](#loadLua)
 * [sendRoomMessage](#sendRoomMessage)
 * [sendCommand](#sendCommand)
+* [joinRoom](#joinRoom)
 * [sendWhisper](#sendWhisper)
 * [startHeartbeat](#startHeartbeat)
 * [async start](#async start)
@@ -124,14 +125,14 @@ Represents a client that connects to Transformice.
 >| connection |  [`Connection`](Connection.md) | The connection that received. |
 >| packet |  [`ByteArray`](Bytearray.md) | The packet. |
 >
-### <a id=handletribulle></a>Client.handleTribulle(packet, packet)
+### <a id=handletribulle></a>Client.handleTribulle(code, packet)
 
 >Handles the community platform packets and emits events.
 >
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| packet |  [`ByteArray`](Bytearray.md) | The community platform code. |
+>| code |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The community platform code. |
 >| packet |  [`ByteArray`](Bytearray.md) | The community platform packet. |
 >
 ### <a id=sendtribullepacket></a>Client.sendTribullePacket(code, packet)
@@ -204,6 +205,15 @@ Represents a client that connects to Transformice.
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
 >| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The command message (without the `/`). |
+>
+### <a id=joinroom></a>Client.joinRoom(name)
+
+>Sends a request to the server to join a room with specific name.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The room name. |
 >
 ### <a id=sendwhisper></a>Client.sendWhisper(nickname, message)
 
