@@ -51,7 +51,7 @@ Represents a room.
 >| value |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | The value. |
 >
 >
-> **Return :**  [`Player`](Player.md)
+> **Return :**  [`Player`](Player.md) The player.
 >
 > **Example :**
  >```js

@@ -155,4 +155,4 @@ Represents a player from the room.
 >| packet |  [`ByteArray`](ByteArray.md) | The packet. |
 >
 >
-> **Return :**  [`Player`](Player.md)
+> **Return :**  [`Player`](Player.md) The player
