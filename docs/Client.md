@@ -239,6 +239,8 @@ Represents a client that connects to Transformice.
 >| api_tfmid |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Your Transformice id. |
 >| api_token |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Your token. |
 >
+>
+> **Return :**  [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**<** [`void`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)**>**
 ### <a id=disconnect></a>Client.disconnect()
 
 >Disconnects the client.
