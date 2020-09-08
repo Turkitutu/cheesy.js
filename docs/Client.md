@@ -27,7 +27,7 @@ Represents a client that connects to Transformice.
 * [joinRoom](#joinRoom)
 * [sendWhisper](#sendWhisper)
 * [startHeartbeat](#startHeartbeat)
-* [async start](#async start)
+* [start](#start)
 * [disconnect](#disconnect)
 #### Events
 * [roomPlayerLeft](#roomPlayerLeft)
@@ -55,52 +55,52 @@ Represents a client that connects to Transformice.
 
 >The online players when the bot log.
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
 ### <a id=room></a>.room
 
 >The client's room.
 >
->**Type:**  [`Room`](Room.md)
+>**Type:**  [`Room`](room.md)
 ### <a id=player></a>.player
 
 >The client's player.
 >
->**Type:**  [`Player`](Player.md)
+>**Type:**  [`Player`](player.md)
 ### <a id=playerid></a>.playerID
 
 >The client's ID.
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
 ### <a id=nickname></a>.nickname
 
 >The client's nickname.
 >
->**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+>**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
 ### <a id=playingtime></a>.playingTime
 
 >The client's playing time.
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
 ### <a id=connectiontime></a>.connectionTime
 
 >The connection time.
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
 ### <a id=community></a>.community
 
 >The client's community code.
 >
->**Type:**  [`enums.community`](Enums.md#community)
+>**Type:**  [`enums.community`](enums.md#community)
 ### <a id=language></a>.language
 
 >The language suggested by the server.
 >
->**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+>**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
 ### <a id=pcode></a>.pcode
 
 >The client's temporary code.
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
 
 
 # Methods
@@ -112,8 +112,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](Connection.md) | The connection that received. |
->| packet |  [`ByteArray`](Bytearray.md) | The packet. |
+>| connection |  [`Connection`](connection.md) | The connection that received. |
+>| packet |  [`Bytearray`](bytearray.md) | The packet. |
 >
 ### <a id=handlepacket></a>Client.handlePacket(connection, packet)
 
@@ -122,8 +122,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](Connection.md) | The connection that received. |
->| packet |  [`ByteArray`](Bytearray.md) | The packet. |
+>| connection |  [`Connection`](connection.md) | The connection that received. |
+>| packet |  [`Bytearray`](bytearray.md) | The packet. |
 >
 ### <a id=handletribulle></a>Client.handleTribulle(code, packet)
 
@@ -132,8 +132,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| code |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The community platform code. |
->| packet |  [`ByteArray`](Bytearray.md) | The community platform packet. |
+>| code |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The community platform code. |
+>| packet |  [`Bytearray`](bytearray.md) | The community platform packet. |
 >
 ### <a id=sendtribullepacket></a>Client.sendTribullePacket(code, packet)
 
@@ -142,8 +142,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| code |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The community platform code. |
->| packet |  [`ByteArray`](Bytearray.md) | The community platform packet. |
+>| code |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The community platform code. |
+>| packet |  [`Bytearray`](bytearray.md) | The community platform packet. |
 >
 ### <a id=login></a>Client.login(nickname, password, room)
 
@@ -152,9 +152,9 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Optional | Default | Description |
 >| :-: | :-: | :-: | :-: | :-- |
->| nickname |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |  |  | The client nickname. |
->| password |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |  |  | The client password. |
->| room |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | ✔ | "1" | The starting room. |
+>| nickname |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) |  |  | The client nickname. |
+>| password |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) |  |  | The client password. |
+>| room |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | ✔ | "1" | The starting room. |
 >
 ### <a id=sendhandshake></a>Client.sendHandshake(version, key)
 
@@ -163,8 +163,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| version |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The version. |
->| key |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Connection key. |
+>| version |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The version. |
+>| key |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The Connection key. |
 >
 ### <a id=setcommunity></a>Client.setCommunity(id)
 
@@ -173,7 +173,7 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Optional | Default | Description |
 >| :-: | :-: | :-: | :-: | :-- |
->| id |  [`enums.community`](Enums.md#community) | ✔ | enums.community.en | The community id. |
+>| id |  [`enums.community`](enums.md#community) | ✔ | enums.community.en | The community id. |
 >
 ### <a id=jointribehouse></a>Client.joinTribeHouse()
 
@@ -186,7 +186,7 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| script |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The script code. |
+>| script |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The script code. |
 >
 ### <a id=sendroommessage></a>Client.sendRoomMessage(message)
 
@@ -195,7 +195,7 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
+>| message |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The message. |
 >
 ### <a id=sendcommand></a>Client.sendCommand(message)
 
@@ -204,7 +204,7 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The command message (without the `/`). |
+>| message |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The command message (without the `/`). |
 >
 ### <a id=joinroom></a>Client.joinRoom(name)
 
@@ -213,7 +213,7 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The room name. |
+>| name |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The room name. |
 >
 ### <a id=sendwhisper></a>Client.sendWhisper(nickname, message)
 
@@ -222,22 +222,22 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| nickname |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The nickname of the player. |
->| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
+>| nickname |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The nickname of the player. |
+>| message |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The message. |
 >
 ### <a id=startheartbeat></a>Client.startHeartbeat()
 
 >Sends a packet every 15 seconds to stay connected to the game.
 >
-### <a id=async start></a>Client.async start(api_tfmid, api_token)
+### <a id=start></a>Client.start(api_tfmid, api_token)
 
 >Starts the client.
 >
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| api_tfmid |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Your Transformice id. |
->| api_token |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Your token. |
+>| api_tfmid |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | Your Transformice id. |
+>| api_token |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | Your token. |
 >
 ### <a id=disconnect></a>Client.disconnect()
 
@@ -262,7 +262,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](Player.md) | The player who left. |
+>| player |  [`Player`](player.md) | The player who left. |
 >
 ### <a id=rawoldpacket></a>rawOldPacket
 
@@ -271,9 +271,9 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](Connection.md) | The connection which sent the packet (`main` or `bulle`). |
->| ccc |  [`enums.oldIdentifiers`](Enums.md#oldIdentifiers) | The old identifier code of the packet. |
->| data |  [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | The data. |
+>| connection |  [`Connection`](connection.md) | The connection which sent the packet (`main` or `bulle`). |
+>| ccc |  [`enums.oldidentifiers`](enums.md#oldidentifiers) | The old identifier code of the packet. |
+>| data |  [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) | The data. |
 >
 ### <a id=loginready></a>loginReady
 
@@ -286,8 +286,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| nickname |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The display nickname. |
->| pcode |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The client's code. |
+>| nickname |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The display nickname. |
+>| pcode |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The client's code. |
 >
 ### <a id=ready></a>ready
 
@@ -300,7 +300,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | a log message |
+>| message |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | a log message |
 >
 ### <a id=roommessage></a>roomMessage
 
@@ -309,7 +309,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`RoomMessage`](Roommessage.md) | The message. |
+>| message |  [`Roommessage`](roommessage.md) | The message. |
 >
 ### <a id=roomchange></a>roomChange
 
@@ -318,8 +318,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| before |  [`Room`](Room.md) | The old room. |
->| after |  [`Room`](Room.md) | The new room. |
+>| before |  [`Room`](room.md) | The old room. |
+>| after |  [`Room`](room.md) | The new room. |
 >
 >
 > **Example :**
@@ -335,8 +335,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| before |  [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | The old playerList. |
->| after |  [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | The new playerList. |
+>| before |  [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object) | The old playerList. |
+>| after |  [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object) | The new playerList. |
 >
 ### <a id=roomplayerupdate></a>roomPlayerUpdate
 
@@ -345,8 +345,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| before |  [`Player`](Player.md) | Old player data. |
->| after |  [`Player`](Player.md) | New player data. |
+>| before |  [`Player`](player.md) | Old player data. |
+>| after |  [`Player`](player.md) | New player data. |
 >
 ### <a id=roomplayerjoin></a>roomPlayerJoin
 
@@ -355,7 +355,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](Player.md) | The player. |
+>| player |  [`Player`](player.md) | The player. |
 >
 ### <a id=rawpacket></a>rawPacket
 
@@ -364,9 +364,9 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](Connection.md) | The connection which sent the packet (`main` or `bulle`). |
->| ccc |  [`enums.identifiers`](Enums.md#identifiers) | The identifier code of the packet. |
->| packet |  [`ByteArray`](Bytearray.md) | The packet. |
+>| connection |  [`Connection`](connection.md) | The connection which sent the packet (`main` or `bulle`). |
+>| ccc |  [`enums.identifiers`](enums.md#identifiers) | The identifier code of the packet. |
+>| packet |  [`Bytearray`](bytearray.md) | The packet. |
 >
 ### <a id=whisper></a>whisper
 
@@ -375,7 +375,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`WhisperMessage`](Whispermessage.md) | The message. |
+>| message |  [`Whispermessage`](whispermessage.md) | The message. |
 >
 ### <a id=rawtribulle></a>rawTribulle
 
@@ -384,8 +384,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| code |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The community platform code. |
->| packet |  [`ByteArray`](Bytearray.md) | The packet. |
+>| code |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The community platform code. |
+>| packet |  [`Bytearray`](bytearray.md) | The packet. |
 >
 ### <a id=disconnect></a>disconnect
 
@@ -398,5 +398,5 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](Connection.md) | The connection which has connected. |
+>| connection |  [`Connection`](connection.md) | The connection which has connected. |
 >

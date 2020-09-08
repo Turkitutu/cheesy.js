@@ -19,8 +19,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| client |  [`Client`](Client.md) | The client. |
->| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Connection name. |
+>| client |  [`Client`](client.md) | The client. |
+>| name |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The Connection name. |
 >
 >
 > **Example :**
@@ -34,8 +34,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| host |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The host. |
->| port |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The port. |
+>| host |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The host. |
+>| port |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The port. |
 >
 ### <a id=send></a>Connection.send(identifier, packet, method)
 
@@ -44,9 +44,9 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Optional | Default | Description |
 >| :-: | :-: | :-: | :-: | :-- |
->| identifier |  [`enums.identifiers`](Enums.md#identifiers) |  |  | The identifier of the packet. |
->| packet |  [`ByteArray`](Bytearray.md) |  |  | The packet. |
->| method |  [`enums.cipherMethod`](Enums.md#cipherMethod) | ✔ | enums.cipherMethod.none | The algorithm method to cipher the packet with it. |
+>| identifier |  [`enums.identifiers`](enums.md#identifiers) |  |  | The identifier of the packet. |
+>| packet |  [`Bytearray`](bytearray.md) |  |  | The packet. |
+>| method |  [`enums.ciphermethod`](enums.md#ciphermethod) | ✔ | enums.cipherMethod.none | The algorithm method to cipher the packet with it. |
 >
 ### <a id=close></a>Connection.close()
 

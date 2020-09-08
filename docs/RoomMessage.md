@@ -17,22 +17,22 @@ Represents a room message.
 
 >The client.
 >
->**Type:**  [`Client`](Client.md)
+>**Type:**  [`Client`](client.md)
 ### <a id=content></a>.content
 
 >The author's message.
 >
->**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+>**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
 ### <a id=author></a>.author
 
 >The author.
 >
->**Type:**  [`Player`](Player.md)
+>**Type:**  [`Player`](player.md)
 ### <a id=community></a>.community
 
 >The author's community ID.
 >
->**Type:**  [`enums.chatCommunity`](Enums.md#chatCommunity)
+>**Type:**  [`enums.chatcommunity`](enums.md#chatcommunity)
 
 
 # Methods
@@ -44,7 +44,7 @@ Represents a room message.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
+>| message |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The message. |
 >
 >
 > **Example :**

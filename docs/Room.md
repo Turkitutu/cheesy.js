@@ -20,22 +20,22 @@ Represents a room.
 
 >The client.
 >
->**Type:**  [`Client`](Client.md)
+>**Type:**  [`Client`](client.md)
 ### <a id=name></a>.name
 
 >The room name.
 >
->**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+>**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
 ### <a id=playerlist></a>.playerList
 
 >All of the [Player](player.md) objects that are in the room.
 >
->**Type:**  [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+>**Type:**  [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object)
 ### <a id=ispublic></a>.isPublic
 
 >Whether or not the room is a public.
 >
->**Type:**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+>**Type:**  [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)
 
 
 # Methods
@@ -47,8 +47,8 @@ Represents a room.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| identifier |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The identifier. |
->| value |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | The value. |
+>| identifier |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The identifier. |
+>| value |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean) | The value. |
 >
 >
 > **Example :**
@@ -63,7 +63,7 @@ Represents a room.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](Player.md) | The player. |
+>| player |  [`Player`](player.md) | The player. |
 >
 ### <a id=updateplayer></a>Room.updatePlayer(player)
 
@@ -72,7 +72,7 @@ Represents a room.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](Player.md) | The player. |
+>| player |  [`Player`](player.md) | The player. |
 >
 ### <a id=sendmessage></a>Room.sendMessage(message)
 
@@ -81,5 +81,5 @@ Represents a room.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
+>| message |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The message. |
 >
