@@ -3,7 +3,7 @@
 ## <a id=identifiers></a>identifiers
 ###### The identifiers of the packets.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | oldPacket | 257 |
 | bulle | 15363 |
@@ -39,13 +39,13 @@
 ## <a id=oldidentifiers></a>oldIdentifiers
 ###### The old identifiers of the packets.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | roomPlayerLeft | 2055 |
 ## <a id=chatcommunity></a>chatCommunity
 ###### The ids of all chat communities
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | en | 1 |
 | fr | 2 |
@@ -81,7 +81,7 @@
 ## <a id=community></a>community
 ###### The ids of all communities
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | en | 0 |
 | fr | 1 |
@@ -117,7 +117,7 @@
 ## <a id=emote></a>emote
 ###### The ids of all emotes
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | dance | 0 |
 | laugh | 1 |
@@ -150,7 +150,7 @@
 ## <a id=smile></a>smile
 ###### the ids of all the smiles.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | smiley | 0 |
 | sad | 1 |
@@ -165,7 +165,7 @@
 ## <a id=game></a>game
 ###### The ids of all Atelier801's games.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | unknown | 0 |
 | none | 1 |
@@ -177,7 +177,7 @@
 ## <a id=gender></a>gender
 ###### The ids of all the genders.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | none | 0 |
 | female | 1 |
@@ -185,7 +185,7 @@
 ## <a id=role></a>role
 ###### The ids of all the staff roles.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | normal | 0 |
 | moderator | 5 |
@@ -195,7 +195,7 @@
 ## <a id=roommode></a>roomMode
 ###### The ids of all the room modes.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | normal | 1 |
 | bootcamp | 2 |
@@ -209,7 +209,7 @@
 ## <a id=whisperstate></a>whisperState
 ###### The ids of all the whisper states.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | enabled | 1 |
 | disabledPublic | 2 |
@@ -217,7 +217,7 @@
 ## <a id=ciphermethod></a>cipherMethod
 ###### The ids of the cipher method.
 
-| Index | Value  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
+| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | none | 0 |
 | xor | 1 |

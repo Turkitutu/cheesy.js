@@ -23,22 +23,22 @@ Represents a message.
 
 >The author's message.
 >
->**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=author></a>.author
 
 >The author name.
 >
->**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=sentto></a>.sentTo
 
 >The player name who sent to them.
 >
->**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=community></a>.community
 
 >The author's community ID.
 >
->**Type:**  [`enums.chatcommunity`](Enums.md#chatcommunity)
+>**Type:**  [`enums.chatCommunity`](Enums.md#chatCommunity)
 
 
 # Methods
@@ -50,7 +50,7 @@ Represents a message.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The message. |
+>| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
 >
 >
 > **Example :**
