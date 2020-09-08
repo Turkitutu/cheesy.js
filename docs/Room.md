@@ -20,7 +20,7 @@ Represents a room.
 
 >The client.
 >
->**Type:**  [`Client`](client.md)
+>**Type:**  [`Client`](Client.md)
 ### <a id=name></a>.name
 
 >The room name.
@@ -63,7 +63,7 @@ Represents a room.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](player.md) | The player. |
+>| player |  [`Player`](Player.md) | The player. |
 >
 ### <a id=updateplayer></a>Room.updatePlayer(player)
 
@@ -72,7 +72,7 @@ Represents a room.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](player.md) | The player. |
+>| player |  [`Player`](Player.md) | The player. |
 >
 ### <a id=sendmessage></a>Room.sendMessage(message)
 

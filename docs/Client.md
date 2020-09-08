@@ -60,12 +60,12 @@ Represents a client that connects to Transformice.
 
 >The client's room.
 >
->**Type:**  [`Room`](room.md)
+>**Type:**  [`Room`](Room.md)
 ### <a id=player></a>.player
 
 >The client's player.
 >
->**Type:**  [`Player`](player.md)
+>**Type:**  [`Player`](Player.md)
 ### <a id=playerid></a>.playerID
 
 >The client's ID.
@@ -90,7 +90,7 @@ Represents a client that connects to Transformice.
 
 >The client's community code.
 >
->**Type:**  [`enums.community`](enums.md#community)
+>**Type:**  [`enums.community`](Enums.md#community)
 ### <a id=language></a>.language
 
 >The language suggested by the server.
@@ -112,8 +112,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](connection.md) | The connection that received. |
->| packet |  [`Bytearray`](bytearray.md) | The packet. |
+>| connection |  [`Connection`](Connection.md) | The connection that received. |
+>| packet |  [`Bytearray`](Bytearray.md) | The packet. |
 >
 ### <a id=handlepacket></a>Client.handlePacket(connection, packet)
 
@@ -122,8 +122,8 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](connection.md) | The connection that received. |
->| packet |  [`Bytearray`](bytearray.md) | The packet. |
+>| connection |  [`Connection`](Connection.md) | The connection that received. |
+>| packet |  [`Bytearray`](Bytearray.md) | The packet. |
 >
 ### <a id=handletribulle></a>Client.handleTribulle(code, packet)
 
@@ -133,7 +133,7 @@ Represents a client that connects to Transformice.
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
 >| code |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The community platform code. |
->| packet |  [`Bytearray`](bytearray.md) | The community platform packet. |
+>| packet |  [`Bytearray`](Bytearray.md) | The community platform packet. |
 >
 ### <a id=sendtribullepacket></a>Client.sendTribullePacket(code, packet)
 
@@ -143,7 +143,7 @@ Represents a client that connects to Transformice.
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
 >| code |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The community platform code. |
->| packet |  [`Bytearray`](bytearray.md) | The community platform packet. |
+>| packet |  [`Bytearray`](Bytearray.md) | The community platform packet. |
 >
 ### <a id=login></a>Client.login(nickname, password, room)
 
@@ -173,7 +173,7 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Optional | Default | Description |
 >| :-: | :-: | :-: | :-: | :-- |
->| id |  [`enums.community`](enums.md#community) | ✔ | enums.community.en | The community id. |
+>| id |  [`enums.community`](Enums.md#community) | ✔ | enums.community.en | The community id. |
 >
 ### <a id=jointribehouse></a>Client.joinTribeHouse()
 
@@ -262,7 +262,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](player.md) | The player who left. |
+>| player |  [`Player`](Player.md) | The player who left. |
 >
 ### <a id=rawoldpacket></a>rawOldPacket
 
@@ -271,8 +271,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](connection.md) | The connection which sent the packet (`main` or `bulle`). |
->| ccc |  [`enums.oldidentifiers`](enums.md#oldidentifiers) | The old identifier code of the packet. |
+>| connection |  [`Connection`](Connection.md) | The connection which sent the packet (`main` or `bulle`). |
+>| ccc |  [`enums.oldidentifiers`](Enums.md#oldidentifiers) | The old identifier code of the packet. |
 >| data |  [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) | The data. |
 >
 ### <a id=loginready></a>loginReady
@@ -309,7 +309,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`Roommessage`](roommessage.md) | The message. |
+>| message |  [`Roommessage`](Roommessage.md) | The message. |
 >
 ### <a id=roomchange></a>roomChange
 
@@ -318,8 +318,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| before |  [`Room`](room.md) | The old room. |
->| after |  [`Room`](room.md) | The new room. |
+>| before |  [`Room`](Room.md) | The old room. |
+>| after |  [`Room`](Room.md) | The new room. |
 >
 >
 > **Example :**
@@ -345,8 +345,8 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| before |  [`Player`](player.md) | Old player data. |
->| after |  [`Player`](player.md) | New player data. |
+>| before |  [`Player`](Player.md) | Old player data. |
+>| after |  [`Player`](Player.md) | New player data. |
 >
 ### <a id=roomplayerjoin></a>roomPlayerJoin
 
@@ -355,7 +355,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| player |  [`Player`](player.md) | The player. |
+>| player |  [`Player`](Player.md) | The player. |
 >
 ### <a id=rawpacket></a>rawPacket
 
@@ -364,9 +364,9 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](connection.md) | The connection which sent the packet (`main` or `bulle`). |
->| ccc |  [`enums.identifiers`](enums.md#identifiers) | The identifier code of the packet. |
->| packet |  [`Bytearray`](bytearray.md) | The packet. |
+>| connection |  [`Connection`](Connection.md) | The connection which sent the packet (`main` or `bulle`). |
+>| ccc |  [`enums.identifiers`](Enums.md#identifiers) | The identifier code of the packet. |
+>| packet |  [`Bytearray`](Bytearray.md) | The packet. |
 >
 ### <a id=whisper></a>whisper
 
@@ -375,7 +375,7 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| message |  [`Whispermessage`](whispermessage.md) | The message. |
+>| message |  [`Whispermessage`](Whispermessage.md) | The message. |
 >
 ### <a id=rawtribulle></a>rawTribulle
 
@@ -385,7 +385,7 @@ client.on('eventName', (property) => {
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
 >| code |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) | The community platform code. |
->| packet |  [`Bytearray`](bytearray.md) | The packet. |
+>| packet |  [`Bytearray`](Bytearray.md) | The packet. |
 >
 ### <a id=disconnect></a>disconnect
 
@@ -398,5 +398,5 @@ client.on('eventName', (property) => {
 >**Properties :**
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
->| connection |  [`Connection`](connection.md) | The connection which has connected. |
+>| connection |  [`Connection`](Connection.md) | The connection which has connected. |
 >

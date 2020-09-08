@@ -19,7 +19,7 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| client |  [`Client`](client.md) | The client. |
+>| client |  [`Client`](Client.md) | The client. |
 >| name |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) | The Connection name. |
 >
 >
@@ -44,9 +44,9 @@ Represents a client that connects to Transformice.
 >**Parameters :**
 >| Parameter | Type | Optional | Default | Description |
 >| :-: | :-: | :-: | :-: | :-- |
->| identifier |  [`enums.identifiers`](enums.md#identifiers) |  |  | The identifier of the packet. |
->| packet |  [`Bytearray`](bytearray.md) |  |  | The packet. |
->| method |  [`enums.ciphermethod`](enums.md#ciphermethod) | ✔ | enums.cipherMethod.none | The algorithm method to cipher the packet with it. |
+>| identifier |  [`enums.identifiers`](Enums.md#identifiers) |  |  | The identifier of the packet. |
+>| packet |  [`Bytearray`](Bytearray.md) |  |  | The packet. |
+>| method |  [`enums.ciphermethod`](Enums.md#ciphermethod) | ✔ | enums.cipherMethod.none | The algorithm method to cipher the packet with it. |
 >
 ### <a id=close></a>Connection.close()
 

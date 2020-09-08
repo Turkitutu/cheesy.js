@@ -17,7 +17,7 @@ Represents a room message.
 
 >The client.
 >
->**Type:**  [`Client`](client.md)
+>**Type:**  [`Client`](Client.md)
 ### <a id=content></a>.content
 
 >The author's message.
@@ -27,12 +27,12 @@ Represents a room message.
 
 >The author.
 >
->**Type:**  [`Player`](player.md)
+>**Type:**  [`Player`](Player.md)
 ### <a id=community></a>.community
 
 >The author's community ID.
 >
->**Type:**  [`enums.chatcommunity`](enums.md#chatcommunity)
+>**Type:**  [`enums.chatcommunity`](Enums.md#chatcommunity)
 
 
 # Methods

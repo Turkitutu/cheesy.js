@@ -61,10 +61,10 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >**Parameters :**
 >| Parameter | Type |
 >| :-: | :-: |
->| value |  [`buffer`](https://nodejs.org/api/buffer.html) [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) [`Bytearray`](bytearray.md) |
+>| value |  [`buffer`](https://nodejs.org/api/buffer.html) [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array) [`Bytearray`](Bytearray.md) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=clear></a>ByteArray.clear()
 
 >Clears the contents of the bytearray and resets the length and positions properties to 0.
@@ -86,7 +86,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >**Parameters :**
 >| Parameter | Type |
 >| :-: | :-: |
->| bytes |  [`Bytearray`](bytearray.md) |
+>| bytes |  [`Bytearray`](Bytearray.md) |
 >| offset |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >| length |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
@@ -134,7 +134,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writebyte></a>ByteArray.writeByte(value)
 
 >Writes a byte to the byte stream.
@@ -145,7 +145,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writebytes></a>ByteArray.writeBytes(bytes, offset, length)
 
 >Writes a sequence of length bytes from the specified byte array, bytes, starting offset bytes into the byte stream.
@@ -153,12 +153,12 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >**Parameters :**
 >| Parameter | Type |
 >| :-: | :-: |
->| bytes |  [`Bytearray`](bytearray.md) |
+>| bytes |  [`Bytearray`](Bytearray.md) |
 >| offset |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >| length |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writeint></a>ByteArray.writeInt(value)
 
 >Writes a 32-bit signed integer to the byte stream.
@@ -169,7 +169,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writeshort></a>ByteArray.writeShort(value)
 
 >Writes a 16-bit integer to the byte stream.
@@ -180,7 +180,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writeunsignedbyte></a>ByteArray.writeUnsignedByte(value)
 
 >Writes a unsigned byte to the byte stream.
@@ -191,7 +191,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writeunsignedint></a>ByteArray.writeUnsignedInt(value)
 
 >Writes a 32-bit unsigned integer to the byte stream.
@@ -202,7 +202,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writeunsignedshort></a>ByteArray.writeUnsignedShort(value)
 
 >Writes a 16-bit unsigned integer to the byte stream.
@@ -213,7 +213,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=writeutf></a>ByteArray.writeUTF(value)
 
 >Writes a UTF-8 string to the byte stream.
@@ -224,7 +224,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| value |  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string) |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=blockcipher></a>ByteArray.blockCipher(keys)
 
 >Cipher the packet with the XXTEA algorithm.
@@ -235,7 +235,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| keys |  [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object) | Identification keys list. |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.
 ### <a id=xorcipher></a>ByteArray.xorCipher(keys)
 
 >Cipher the packet with the XOR algorithm.
@@ -246,4 +246,4 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| keys |  [`object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object) | Msg keys list. |
 >
 >
-> **Return :**  [`Bytearray`](bytearray.md) The byte stream.
+> **Return :**  [`Bytearray`](Bytearray.md) The byte stream.

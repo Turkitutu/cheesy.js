@@ -152,5 +152,5 @@ Represents a player from the room.
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| packet |  [`Bytearray`](bytearray.md) | The packet. |
+>| packet |  [`Bytearray`](Bytearray.md) | The packet. |
 >
