@@ -8,7 +8,7 @@
 ## Changes
 - Update to the new language system.
 - Remove ~~Client.setCommunity~~ and replace it with [`Client.setLanguage`](docs/Client.md#setLanguage).
-- Remove ~~Enums.language~~ and replace it with [`Enums.language`](docs/Enums.md#language)
+- Remove ~~Enums.community~~ and replace it with [`Enums.language`](docs/Enums.md#language)
 
 ## v2.0.5 - 09/07/2020
 
