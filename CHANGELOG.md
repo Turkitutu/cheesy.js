@@ -7,8 +7,8 @@
 
 ## Changes
 - Update to the new language system.
-- Remove ~~Client.setCommunity~~ and replace it with [`[Client.setLanguage]`](docs/Client.md#clientsetlanguage).
-- Remove ~~Enums.language~~ and replace it with [`[Enums.language]`](docs/Enums.md#language)
+- Remove ~~Client.setCommunity~~ and replace it with [`Client.setLanguage`](docs/Client.md#setLanguage).
+- Remove ~~Enums.language~~ and replace it with [`Enums.language`](docs/Enums.md#language)
 
 ## v2.0.5 - 09/07/2020
 
@@ -33,7 +33,7 @@
 - Add Client.handleOldPacket function.
 
 ## Changes
-- Remove ~~Client.sendRoomMessage~~ and replace it with [`[Room.sendMessage]`](docs/Room.md#roomsendmessagemessage)
+- Remove ~~Client.sendRoomMessage~~ and replace it with [`Room.sendMessage`](docs/Room.md#roomsendmessagemessage)
 
 ## v1.0.5 - 06/28/2020
 
