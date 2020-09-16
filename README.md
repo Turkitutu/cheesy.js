@@ -29,7 +29,7 @@ const cheesyjs = require('cheesy.js');
 const client = new cheesyjs();
 
 client.on('loginReady', () => {
-	client.setCommunity(cheesyjs.enums.community.en);
+	client.setLanguage(cheesyjs.enums.language.en);
 	client.login('nickname', 'password', "roomName");
 });
 

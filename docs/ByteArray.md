@@ -7,7 +7,6 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 * [clear](#clear)
 * [readBoolean](#readBoolean)
 * [readByte](#readByte)
-* [readBytes](#readBytes)
 * [readInt](#readInt)
 * [readShort](#readShort)
 * [readUnsignedByte](#readUnsignedByte)
@@ -78,17 +77,6 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 ### <a id=readbyte></a>ByteArray.readByte()
 
 >Reads a signed byte from the byte stream.
->
-### <a id=readbytes></a>ByteArray.readBytes(bytes, offset, length)
-
->Reads the number of data bytes, specified by the length parameter, from the byte stream.
->
->**Parameters :**
->| Parameter | Type |
->| :-: | :-: |
->| bytes |  [`ByteArray`](ByteArray.md) |
->| offset |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
->| length |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 >
 ### <a id=readint></a>ByteArray.readInt()
 

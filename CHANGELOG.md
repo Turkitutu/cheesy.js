@@ -1,6 +1,16 @@
 # Changelogs
 
-## v2.0.5 - 06/29/2020
+## v2.0.6 - 09/16/2020
+
+## News
+- Add [`languageChange`](docs/Client.md#languagechange) event.
+
+## Changes
+- Update to the new language system.
+- Remove ~~Client.setCommunity~~ and replace it with [`[Client.setLanguage]`](docs/Client.md#clientsetlanguage).
+- Remove ~~Enums.language~~ and replace it with [`[Enums.language]`](docs/Enums.md#language)
+
+## v2.0.5 - 09/07/2020
 
 ## News
 - Add Client.joinRoom method.

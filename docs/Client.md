@@ -19,7 +19,7 @@ Represents a client that connects to Transformice.
 * [sendTribullePacket](#sendTribullePacket)
 * [login](#login)
 * [sendHandshake](#sendHandshake)
-* [setCommunity](#setCommunity)
+* [setLanguage](#setLanguage)
 * [joinTribeHouse](#joinTribeHouse)
 * [loadLua](#loadLua)
 * [sendRoomMessage](#sendRoomMessage)
@@ -41,6 +41,7 @@ Represents a client that connects to Transformice.
 * [roomUpdate](#roomUpdate)
 * [roomPlayerUpdate](#roomPlayerUpdate)
 * [roomPlayerJoin](#roomPlayerJoin)
+* [languageChange](#languageChange)
 * [rawPacket](#rawPacket)
 * [whisper](#whisper)
 * [rawTribulle](#rawTribulle)
@@ -166,14 +167,14 @@ Represents a client that connects to Transformice.
 >| version |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The version. |
 >| key |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Connection key. |
 >
-### <a id=setcommunity></a>Client.setCommunity(id)
+### <a id=setlanguage></a>Client.setLanguage(id)
 
->Sets the community of the bot.
+>Sets the language of the client.
 >
 >**Parameters :**
 >| Parameter | Type | Optional | Default | Description |
 >| :-: | :-: | :-: | :-: | :-- |
->| id |  [`enums.community`](Enums.md#community) | ✔ | enums.community.en | The community id. |
+>| id |  [`enums.language`](Enums.md#language) | ✔ | enums.language.en | The language iso code. |
 >
 ### <a id=jointribehouse></a>Client.joinTribeHouse()
 
@@ -206,14 +207,15 @@ Represents a client that connects to Transformice.
 >| :-: | :-: | :-- |
 >| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The command message (without the `/`). |
 >
-### <a id=joinroom></a>Client.joinRoom(name)
+### <a id=joinroom></a>Client.joinRoom(name, isSalonAuto)
 
 >Sends a request to the server to join a room with specific name.
 >
 >**Parameters :**
->| Parameter | Type | Description |
->| :-: | :-: | :-- |
->| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The room name. |
+>| Parameter | Type | Optional | Default | Description |
+>| :-: | :-: | :-: | :-: | :-- |
+>| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |  |  | The room name. |
+>| isSalonAuto |  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | ✔ | false | Whether the change room must be /salonauto or not. |
 >
 ### <a id=sendwhisper></a>Client.sendWhisper(nickname, message)
 
@@ -358,6 +360,18 @@ client.on('eventName', (property) => {
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
 >| player |  [`Player`](Player.md) | The player. |
+>
+### <a id=languagechange></a>languageChange
+
+>Emitted when a language is changed.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| language |  [`enums.language`](Enums.md#language) | The iso code of the language. |
+>| country |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The code of the country. |
+>| readRight |  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Whether the language is read left to right or not. |
+>| readSpecialChar |  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Whether the language has special characters or not. |
 >
 ### <a id=rawpacket></a>rawPacket
 

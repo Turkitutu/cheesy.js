@@ -15,7 +15,6 @@
 | cafeNewTopic | 7724 |
 | cafeSendMessage | 7723 |
 | command | 1562 |
-| community | 2050 |
 | logged | 6658 |
 | handshakeOk | 6659 |
 | emote | 2049 |
@@ -36,84 +35,109 @@
 | roomChange | 1301 |
 | roomPlayerList | 36865 |
 | roomNewPlayer | 36866 |
+| language | 45057 |
+| languageChange | 45058 |
+| requestLanguage | 45061 |
 ## <a id=oldidentifiers></a>oldIdentifiers
 ###### The old identifiers of the packets.
 
 | Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 | :-: | :-: |
 | roomPlayerLeft | 2055 |
-## <a id=chatcommunity></a>chatCommunity
-###### The ids of all chat communities
+## <a id=language></a>language
+###### The available communities based on the languages.
 
-| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+| Index | Value  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 | :-: | :-: |
-| en | 1 |
-| fr | 2 |
-| ru | 3 |
-| br | 4 |
-| es | 5 |
-| cn | 6 |
-| tr | 7 |
-| vk | 8 |
-| pl | 9 |
-| hu | 10 |
-| nl | 11 |
-| ro | 12 |
-| id | 13 |
-| de | 14 |
-| e2 | 15 |
-| ar | 16 |
-| ph | 17 |
-| lt | 18 |
-| jp | 19 |
-| ch | 20 |
-| fi | 21 |
-| cz | 22 |
-| hr | 23 |
-| sk | 24 |
-| bg | 25 |
-| lv | 26 |
-| he | 27 |
-| it | 28 |
-| et | 29 |
-| az | 30 |
-| pt | 31 |
-## <a id=community></a>community
-###### The ids of all communities
-
-| Index | Value  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
-| :-: | :-: |
-| en | 0 |
-| fr | 1 |
-| ru | 2 |
-| br | 3 |
-| es | 4 |
-| cn | 5 |
-| tr | 6 |
-| vk | 7 |
-| pl | 8 |
-| hu | 9 |
-| nl | 10 |
-| ro | 11 |
-| id | 12 |
-| de | 13 |
-| e2 | 14 |
-| ar | 15 |
-| ph | 16 |
-| lt | 17 |
-| jp | 18 |
-| ch | 19 |
-| fi | 20 |
-| cz | 21 |
-| sk | 22 |
-| hr | 23 |
-| bg | 24 |
-| lv | 25 |
-| he | 26 |
-| it | 27 |
-| et | 29 |
-| az | 30 |
-| pt | 31 |
+| es | es |
+| af | af |
+| az | az |
+| id | id |
+| ms | ms |
+| bi | bi |
+| bs | bs |
+| ca | ca |
+| ny | ny |
+| da | da |
+| de | de |
+| et | et |
+| na | na |
+| en | en |
+| to | to |
+| mg | mg |
+| fr | fr |
+| sm | sm |
+| hr | hr |
+| it | it |
+| mh | mh |
+| kl | kl |
+| rn | rn |
+| rw | rw |
+| sw | sw |
+| ht | ht |
+| lv | lv |
+| lt | lt |
+| lb | lb |
+| hu | hu |
+| mt | mt |
+| nl | nl |
+| no | no |
+| uz | uz |
+| pl | pl |
+| pt | pt |
+| br | br |
+| ro | ro |
+| qu | qu |
+| st | st |
+| tn | tn |
+| sq | sq |
+| ss | ss |
+| sk | sk |
+| sl | sl |
+| so | so |
+| fi | fi |
+| sv | sv |
+| tl | tl |
+| vi | vi |
+| tk | tk |
+| tr | tr |
+| fj | fj |
+| wo | wo |
+| yo | yo |
+| is | is |
+| cs | cs |
+| el | el |
+| be | be |
+| ky | ky |
+| mn | mn |
+| ru | ru |
+| sr | sr |
+| tg | tg |
+| uk | uk |
+| bg | bg |
+| kk | kk |
+| hy | hy |
+| he | he |
+| ur | ur |
+| ar | ar |
+| fa | fa |
+| dv | dv |
+| ne | ne |
+| hi | hi |
+| bn | bn |
+| ta | ta |
+| th | th |
+| lo | lo |
+| dz | dz |
+| my | my |
+| ka | ka |
+| ti | ti |
+| am | am |
+| km | km |
+| cn | cn |
+| zh | zh |
+| ja | ja |
+| ko | ko |
 ## <a id=emote></a>emote
 ###### The ids of all emotes
 

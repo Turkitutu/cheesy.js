@@ -6,6 +6,8 @@ Represents a room.
 * [name](#name)
 * [playerList](#playerList)
 * [isPublic](#isPublic)
+* [language](#language)
+* [isTribeHouse](#isTribeHouse)
 #### Methods 
 * [getPlayer](#getPlayer)
 * [removePlayer](#removePlayer)
@@ -36,6 +38,16 @@ Represents a room.
 >Whether or not the room is a public.
 >
 >**Type:**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+### <a id=language></a>.language
+
+>The room language.
+>
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+### <a id=istribehouse></a>.isTribeHouse
+
+>Whether or not the room is a tribe house.
+>
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
 # Methods

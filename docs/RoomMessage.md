@@ -5,7 +5,6 @@ Represents a room message.
 * [client](#client)
 * [content](#content)
 * [author](#author)
-* [community](#community)
 #### Methods 
 * [reply](#reply)
 
@@ -28,11 +27,6 @@ Represents a room message.
 >The author.
 >
 >**Type:**  [`Player`](Player.md)
-### <a id=community></a>.community
-
->The author's community ID.
->
->**Type:**  [`enums.chatCommunity`](Enums.md#chatCommunity)
 
 
 # Methods
