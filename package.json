@@ -1,28 +1,30 @@
 {
-  "name": "cheesy.js",
-  "version": "1.0.2b",
-  "description": "A NodeJs client for Transformice.",
-  "main": "./lib/client.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Turkitutu/cheesy.js"
-  },
-  "keywords": [
-    "bots",
-    "tfm",
-    "transformage",
-    "client",
-    "transformice",
-    "chessy.js"
-  ],
-  "author": {"name" : "Yatsuki#4775", "email": "turkitututfm@gmail.com"},
-  "license": "ISC",
-  "dependencies": {
-    "crypto": "^1.0.1",
-    "iconv-lite": "^0.5.1",
-    "request": "^2.88.2"
-  }
+	"name": "cheesy.js",
+	"version": "2.0.9",
+	"description": "A NodeJs client for Transformice.",
+	"main": "./lib/client.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Turkitutu/cheesy.js"
+	},
+	"keywords": [
+		"bots",
+		"tfm",
+		"transformage",
+		"client",
+		"transformice",
+		"chessy.js"
+	],
+	"author": {
+		"name": "Yatsuki#4775",
+		"email": "turkitututfm@gmail.com"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"iconv-lite": "^0.5.2",
+		"node-fetch": "^2.6.1"
+	}
 }
