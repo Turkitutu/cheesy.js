@@ -1,5 +1,5 @@
-# Friends's Documentation
-Represents a friend from the friend list
+# Friend's Documentation
+Represents a player from the room.
 
 #### Properties 
 * [id](#id)
@@ -20,62 +20,62 @@ Represents a friend from the friend list
 
 ### <a id=id></a>.id
 
->The player's id.
+>The player's id
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-### <a id=nickName></a>.nickName
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
+### <a id=nickname></a>.nickName
 
->The player's nickName.
+>The player's nickname
 >
->**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+>**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
 ### <a id=gender></a>.gender
 
 >The player's gender
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-### <a id=isSoulmate></a>.isSoulmate
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
+### <a id=issoulmate></a>.isSoulmate
 
 >If the player is the soulmate of the client
 >
->**Type:**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
-### <a id=hasAddedBack></a>.hasAddedBack
+>**Type:**  [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)
+### <a id=hasaddedback></a>.hasAddedBack
 
 >If the player has added the client back
 >
->**Type:**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
-### <a id=isConnected></a>.isConnected
+>**Type:**  [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)
+### <a id=isconnected></a>.isConnected
 
 >If the player is connected
 >
->**Type:**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+>**Type:**  [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)
 ### <a id=community></a>.community
 
 >The community of the player
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-### <a id=roomName></a>.roomName
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
+### <a id=roomname></a>.roomName
 
 >The room name of the player (if they are online)
 >
->**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-### <a id=lastConnection></a>.lastConnection
+>**Type:**  [`string`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)
+### <a id=lastconnection></a>.lastConnection
 
 >The player's last connection time
 >
->**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>**Type:**  [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)
 
 
 # Methods
 
 ### <a id=read></a>Friend.read(packet, isSoulmate)
 
->Reads player data from a packet.
+>Returns friend data from a packet
 >
 >**Parameters :**
 >| Parameter | Type | Description |
 >| :-: | :-: | :-- |
->| packet |  [`ByteArray`](ByteArray.md) | The packet. |
->| isSoulmate | [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the player is soulmate (located in the reserved space for the soulmate)
+>| packet |  [`ByteArray`](ByteArray.md) | The packet |
+>| isSoulmate |  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the player is soulmate (located in the reserved space for the soulmate) |
 >
 >
-> **Return :**  [`Friend`](Friend.md) The friend
+> **Return :**  [`Friend`](Friend.md) the friend

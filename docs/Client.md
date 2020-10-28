@@ -26,6 +26,7 @@ Represents a client that connects to Transformice.
 * [sendCommand](#sendCommand)
 * [joinRoom](#joinRoom)
 * [sendWhisper](#sendWhisper)
+* [requestFriendList](#requestFriendList)
 * [startHeartbeat](#startHeartbeat)
 * [start](#start)
 * [disconnect](#disconnect)
@@ -44,6 +45,7 @@ Represents a client that connects to Transformice.
 * [languageChange](#languageChange)
 * [rawPacket](#rawPacket)
 * [whisper](#whisper)
+* [friendList](#friendList)
 * [rawTribulle](#rawTribulle)
 * [disconnect](#disconnect)
 * [connect](#connect)
@@ -227,6 +229,10 @@ Represents a client that connects to Transformice.
 >| nickname |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The nickname of the player. |
 >| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message. |
 >
+### <a id=requestfriendlist></a>Client.requestFriendList()
+
+>Request friend list.
+>
 ### <a id=startheartbeat></a>Client.startHeartbeat()
 
 >Sends a packet every 15 seconds to stay connected to the game.
@@ -392,6 +398,16 @@ client.on('eventName', (property) => {
 >| Property | Type | Description |
 >| :-: | :-: | :-- |
 >| message |  [`WhisperMessage`](WhisperMessage.md) | The message. |
+>
+### <a id=friendlist></a>friendList
+
+>Emmitted when the client received the friend list
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| friends |  [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**<** [`Friend`](Friend.md)**>** | An array of friends |
+>| soulmate |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) [`Null`](Null.md) | The name of the soulmate, `null` if absent |
 >
 ### <a id=rawtribulle></a>rawTribulle
 

@@ -1,5 +1,11 @@
 # Changelogs
 
+## v2.1.0 - 10/28/2020
+
+## News
+- Add friends (requestFriendList method/friendList event).
+
+
 ## v2.0.6 - 09/16/2020
 
 ## News
