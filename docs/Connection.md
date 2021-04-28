@@ -37,16 +37,15 @@ Represents a client that connects to Transformice.
 >| host |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The host. |
 >| port |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The port. |
 >
-### <a id=send></a>Connection.send(identifier, packet, method)
+### <a id=send></a>Connection.send(identifier, packet)
 
 >Sends a packet to the connection.
 >
 >**Parameters :**
->| Parameter | Type | Optional | Default | Description |
->| :-: | :-: | :-: | :-: | :-- |
->| identifier |  [`enums.identifiers`](Enums.md#identifiers) |  |  | The identifier of the packet. |
->| packet |  [`ByteArray`](ByteArray.md) |  |  | The packet. |
->| method |  [`enums.cipherMethod`](Enums.md#cipherMethod) | ✔ | enums.cipherMethod.none | The algorithm method to cipher the packet with it. |
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| identifier |  [`enums.identifiers`](Enums.md#identifiers) | The identifier of the packet. |
+>| packet |  [`ByteArray`](ByteArray.md) | The packet. |
 >
 ### <a id=close></a>Connection.close()
 

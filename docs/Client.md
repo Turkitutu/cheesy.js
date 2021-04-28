@@ -159,15 +159,9 @@ Represents a client that connects to Transformice.
 >| password |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |  |  | The client password. |
 >| room |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | ✔ | "1" | The starting room. |
 >
-### <a id=sendhandshake></a>Client.sendHandshake(version, key)
+### <a id=sendhandshake></a>Client.sendHandshake()
 
 >Sends Handshake.
->
->**Parameters :**
->| Parameter | Type | Description |
->| :-: | :-: | :-- |
->| version |  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The version. |
->| key |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Connection key. |
 >
 ### <a id=setlanguage></a>Client.setLanguage(id)
 
@@ -209,6 +203,11 @@ Represents a client that connects to Transformice.
 >| :-: | :-: | :-- |
 >| message |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The command message (without the `/`). |
 >
+>
+> **Example :**
+ >```js
+>client.sendCommand('mod');
+>```
 ### <a id=joinroom></a>Client.joinRoom(name, isSalonAuto)
 
 >Sends a request to the server to join a room with specific name.
@@ -237,15 +236,9 @@ Represents a client that connects to Transformice.
 
 >Sends a packet every 15 seconds to stay connected to the game.
 >
-### <a id=start></a>Client.start(api_tfmid, api_token)
+### <a id=start></a>Client.start()
 
 >Starts the client.
->
->**Parameters :**
->| Parameter | Type | Description |
->| :-: | :-: | :-- |
->| api_tfmid |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Your Transformice id. |
->| api_token |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Your token. |
 >
 >
 > **Return :**  [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**<** [`void`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)**>**

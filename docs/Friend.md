@@ -1,5 +1,5 @@
 # Friend's Documentation
-Represents a player from the room.
+Represents a friend from the friend list
 
 #### Properties 
 * [id](#id)

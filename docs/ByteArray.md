@@ -23,8 +23,6 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 * [writeUnsignedInt](#writeUnsignedInt)
 * [writeUnsignedShort](#writeUnsignedShort)
 * [writeUTF](#writeUTF)
-* [blockCipher](#blockCipher)
-* [xorCipher](#xorCipher)
 
 
 
@@ -73,7 +71,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >Reads a Boolean value from the byte stream.
 >
 >
-> **Return :**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) The Boolean that was readed from the byte stream.
+> **Return :**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) The Boolean that was read from the byte stream.
 ### <a id=readbyte></a>ByteArray.readByte()
 
 >Reads a signed byte from the byte stream.
@@ -83,7 +81,7 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >Reads a signed 32-bit integer from the byte stream.
 >
 >
-> **Return :**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) The signed 32-bit integer that was readed from the byte stream.
+> **Return :**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) The signed 32-bit integer that was read from the byte stream.
 ### <a id=readshort></a>ByteArray.readShort()
 
 >Reads a signed 16-bit integer from the byte stream.
@@ -210,28 +208,6 @@ Creates a ByteArray instance representing a packed array of bytes, so that you c
 >| Parameter | Type |
 >| :-: | :-: |
 >| value |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
->
->
-> **Return :**  [`ByteArray`](ByteArray.md) The byte stream.
-### <a id=blockcipher></a>ByteArray.blockCipher(keys)
-
->Cipher the packet with the XXTEA algorithm.
->
->**Parameters :**
->| Parameter | Type | Description |
->| :-: | :-: | :-- |
->| keys |  [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | Identification keys list. |
->
->
-> **Return :**  [`ByteArray`](ByteArray.md) The byte stream.
-### <a id=xorcipher></a>ByteArray.xorCipher(keys)
-
->Cipher the packet with the XOR algorithm.
->
->**Parameters :**
->| Parameter | Type | Description |
->| :-: | :-: | :-- |
->| keys |  [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | Msg keys list. |
 >
 >
 > **Return :**  [`ByteArray`](ByteArray.md) The byte stream.
