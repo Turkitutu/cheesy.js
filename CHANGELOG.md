@@ -1,5 +1,17 @@
 # Changelogs
 
+## v2.2.0 - 4/28/2021
+
+## News
+- Support bot role instead of ~~tokens~~.
+- Can't use endpoint's tokens anymore.
+
+## Changes
+- [`Client.start`](docs/Client.md#start) no longer use ~~tfmid and token~~ parameters.
+- Fix docs typo
+
+# Changelogs
+
 ## v2.1.0 - 10/28/2020
 
 ## News
