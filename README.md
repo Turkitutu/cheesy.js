@@ -37,7 +37,7 @@ client.on('loginReady', () => {
 });
 
 client.on('roomMessage', (message) => {
-    if (client.nickname == message.author.nickname)
+	if (client.nickname == message.author.nickname)
 		return;
 	client.sendRoomMessage(message.author.look);
 });
