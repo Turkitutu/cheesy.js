@@ -47,4 +47,4 @@ Represents a #chat in the game.
 >| content |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the message. |
 >
 >
-> **Return :**  [`Chat`](Chat.md) The chat.
+> **Return :**  [`ChatMessage`](ChatMessage.md) The ChatMessage.

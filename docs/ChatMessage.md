@@ -52,3 +52,5 @@ Represents a message in the chat.
 >| :-: | :-: | :-- |
 >| content |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the message. |
 >
+>
+> **Return :**  [`ChatMessage`](ChatMessage.md) The ChatMessage.
