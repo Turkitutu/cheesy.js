@@ -1,5 +1,10 @@
 # Changelogs
 
+## v2.3.0 - 5/15/2021
+
+## News
+- Support #chats (who/join/leave/send and receive messages).
+
 ## v2.2.0 - 4/28/2021
 
 ## News
@@ -9,8 +14,6 @@
 ## Changes
 - [`Client.start`](docs/Client.md#start) no longer use ~~tfmid and token~~ parameters.
 - Fix docs typo
-
-# Changelogs
 
 ## v2.1.0 - 10/28/2020
 
