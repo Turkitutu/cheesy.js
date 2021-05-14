@@ -52,7 +52,7 @@ Represents a client that connects to Transformice.
 * [whisper](#whisper)
 * [friendList](#friendList)
 * [chatJoin](#chatJoin)
-* [chatJoin](#chatJoin)
+* [chatLeave](#chatLeave)
 * [chatMessage](#chatMessage)
 * [rawTribulle](#rawTribulle)
 * [disconnect](#disconnect)
@@ -476,7 +476,7 @@ client.on('eventName', (property) => {
 >| :-: | :-: | :-- |
 >| chat |  [`Chat`](Chat.md) | The chat. |
 >
-### <a id=chatjoin></a>chatJoin
+### <a id=chatleave></a>chatLeave
 
 >Emmitted when the client leave a chat.
 >
