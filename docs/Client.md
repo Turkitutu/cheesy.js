@@ -28,10 +28,10 @@ Represents a client that connects to Transformice.
 * [joinRoom](#joinRoom)
 * [sendWhisper](#sendWhisper)
 * [requestFriendList](#requestFriendList)
-* [ getChat](# getChat)
+* [getChat](#getChat)
 * [joinChat](#joinChat)
 * [leaveChat](#leaveChat)
-* [ async sendChatMessage](# async sendChatMessage)
+* [sendChatMessage](#sendChatMessage)
 * [startHeartbeat](#startHeartbeat)
 * [start](#start)
 * [disconnect](#disconnect)
@@ -245,7 +245,7 @@ Represents a client that connects to Transformice.
 
 >Request friend list.
 >
-### <a id= getchat></a>Client. getChat(name)
+### <a id=getchat></a>Client.getChat(name)
 
 >Get a chat by name.
 >
@@ -285,7 +285,7 @@ Represents a client that connects to Transformice.
 >
 >
 > **Return :**  [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**<** [`Chat`](Chat.md)**>** The chat that the client left.
-### <a id= async sendchatmessage></a>Client. async sendChatMessage(name, content)
+### <a id=sendchatmessage></a>Client.sendChatMessage(name, content)
 
 >Sends a message to a pchat.
 >
@@ -295,6 +295,8 @@ Represents a client that connects to Transformice.
 >| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The chat's name. |
 >| content |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the message. |
 >
+>
+> **Return :**  [`Chat`](Chat.md) The chat.
 ### <a id=startheartbeat></a>Client.startHeartbeat()
 
 >Sends a packet every 15 seconds to stay connected to the game.

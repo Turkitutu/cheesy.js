@@ -20,9 +20,9 @@ Represents a #chat in the game.
 >**Type:**  [`Client`](Client.md)
 ### <a id=name></a>.name
 
->The client.
+>The chat's name.
 >
->**Type:**  [`Client`](Client.md)
+>**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
 # Methods
@@ -46,3 +46,5 @@ Represents a #chat in the game.
 >| :-: | :-: | :-- |
 >| content |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the message. |
 >
+>
+> **Return :**  [`Chat`](Chat.md) The chat.
