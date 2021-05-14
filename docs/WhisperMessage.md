@@ -26,7 +26,7 @@ Represents a message.
 >**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=author></a>.author
 
->The author name.
+>The author's nickname.
 >
 >**Type:**  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### <a id=sentto></a>.sentTo

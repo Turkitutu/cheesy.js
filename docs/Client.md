@@ -12,6 +12,7 @@ Represents a client that connects to Transformice.
 * [community](#community)
 * [language](#language)
 * [pcode](#pcode)
+* [chatList](#chatList)
 #### Methods 
 * [handleOldPacket](#handleOldPacket)
 * [handlePacket](#handlePacket)
@@ -27,6 +28,10 @@ Represents a client that connects to Transformice.
 * [joinRoom](#joinRoom)
 * [sendWhisper](#sendWhisper)
 * [requestFriendList](#requestFriendList)
+* [ getChat](# getChat)
+* [joinChat](#joinChat)
+* [leaveChat](#leaveChat)
+* [ async sendChatMessage](# async sendChatMessage)
 * [startHeartbeat](#startHeartbeat)
 * [start](#start)
 * [disconnect](#disconnect)
@@ -46,6 +51,9 @@ Represents a client that connects to Transformice.
 * [rawPacket](#rawPacket)
 * [whisper](#whisper)
 * [friendList](#friendList)
+* [chatJoin](#chatJoin)
+* [chatJoin](#chatJoin)
+* [chatMessage](#chatMessage)
 * [rawTribulle](#rawTribulle)
 * [disconnect](#disconnect)
 * [connect](#connect)
@@ -104,6 +112,11 @@ Represents a client that connects to Transformice.
 >The client's temporary code.
 >
 >**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+### <a id=chatlist></a>.chatList
+
+>The chat list
+>
+>**Type:**  [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**<** [`Chat`](Chat.md)**>**
 
 
 # Methods
@@ -231,6 +244,56 @@ Represents a client that connects to Transformice.
 ### <a id=requestfriendlist></a>Client.requestFriendList()
 
 >Request friend list.
+>
+### <a id= getchat></a>Client. getChat(name)
+
+>Get a chat by name.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name. |
+>
+>
+> **Return :**  [`Chat`](Chat.md) The Chat.
+>
+> **Example :**
+ >```js
+>const test_chat = client.getChat('test');
+>test_chat.send('Hi');
+>```
+### <a id=joinchat></a>Client.joinChat(name, auto)
+
+>Joins a #chat.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The chat name. |
+>| auto |  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | if true the server will automatically rejoin the client to this chat when logged in. |
+>
+>
+> **Return :**  [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**<** [`Chat`](Chat.md)**>** The chat that the client joined.
+### <a id=leavechat></a>Client.leaveChat(name)
+
+>Leaves a #chat.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The chat name. |
+>
+>
+> **Return :**  [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**<** [`Chat`](Chat.md)**>** The chat that the client left.
+### <a id= async sendchatmessage></a>Client. async sendChatMessage(name, content)
+
+>Sends a message to a pchat.
+>
+>**Parameters :**
+>| Parameter | Type | Description |
+>| :-: | :-: | :-- |
+>| name |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The chat's name. |
+>| content |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the message. |
 >
 ### <a id=startheartbeat></a>Client.startHeartbeat()
 
@@ -401,6 +464,33 @@ client.on('eventName', (property) => {
 >| :-: | :-: | :-- |
 >| friends |  [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**<** [`Friend`](Friend.md)**>** | An array of friends |
 >| soulmate |  [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) [`Null`](Null.md) | The name of the soulmate, `null` if absent |
+>
+### <a id=chatjoin></a>chatJoin
+
+>Emmitted when the client joined a chat.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| chat |  [`Chat`](Chat.md) | The chat. |
+>
+### <a id=chatjoin></a>chatJoin
+
+>Emmitted when the client leave a chat.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| chat |  [`Chat`](Chat.md) | The chat. |
+>
+### <a id=chatmessage></a>chatMessage
+
+>Emmitted when the client receives a message from a #chat.
+>
+>**Properties :**
+>| Property | Type | Description |
+>| :-: | :-: | :-- |
+>| chat |  [`Chat`](Chat.md) | The chat. |
 >
 ### <a id=rawtribulle></a>rawTribulle
 
