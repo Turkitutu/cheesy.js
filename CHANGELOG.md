@@ -1,5 +1,10 @@
 # Changelogs
 
+## v2.4.0 - 1/03/2022
+
+## News
+- Update API endpoint
+
 ## v2.3.0 - 5/15/2021
 
 ## News
