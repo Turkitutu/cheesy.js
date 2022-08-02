@@ -22,7 +22,7 @@ See below to know the names of Transfromage managers who handles the system.
 You can install cheesy.js using npm:
 `npm install cheesy.js`
 
-![/!\\](https://i.imgur.com/HQ188PK.png) **Versions under 2.4.0 are no longer working due to internal changes of the game.**<br>
+![/!\\](https://i.imgur.com/HQ188PK.png) **Versions under 2.5.0 are no longer working due to internal changes of the game.**<br>
 
 ## Example
 
