@@ -1,5 +1,10 @@
 # Changelogs
 
+## v2.5.0 - 2/08/2022
+
+## News
+- Update the defaults host/ports.
+
 ## v2.4.0 - 1/03/2022
 
 ## News
