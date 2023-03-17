@@ -1,6 +1,5 @@
 node_modules
-test.js
-test
+t.js
 mydocs.js
 cheesyBot.js
 ids.js
@@ -9,3 +8,5 @@ ids.js
 
 
 .npmrc
+
+lib.client.test.js
