@@ -10,3 +10,5 @@ ids.js
 .npmrc
 
 lib.client.test.js
+
+coverage
