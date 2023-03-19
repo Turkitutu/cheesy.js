@@ -1,5 +1,14 @@
 # Changelogs
 
+
+## v2.6.0 - 3/19/2023
+
+## News
+- Add `Client.getFriendList` and `Friend.joinRoom` methods 
+
+## Changes
+- Fix room playerList
+
 ## v2.5.0 - 2/08/2022
 
 ## News
