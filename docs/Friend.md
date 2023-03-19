@@ -2,6 +2,7 @@
 Represents a friend from the friend list
 
 #### Properties 
+* [client](#client)
 * [id](#id)
 * [nickName](#nickName)
 * [gender](#gender)
@@ -13,11 +14,17 @@ Represents a friend from the friend list
 * [lastConnection](#lastConnection)
 #### Methods 
 * [read](#read)
+* [joinRoom](#joinRoom)
 
 
 
 # Properties 
 
+### <a id=client></a>.client
+
+>The client.
+>
+>**Type:**  [`Client`](Client.md)
 ### <a id=id></a>.id
 
 >The player's id
@@ -79,3 +86,7 @@ Represents a friend from the friend list
 >
 >
 > **Return :**  [`Friend`](Friend.md) the friend
+### <a id=joinroom></a>Friend.joinRoom()
+
+>Join to the room of the friend
+>

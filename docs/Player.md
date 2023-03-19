@@ -8,7 +8,7 @@ Represents a player from the room.
 * [pcode](#pcode)
 * [title](#title)
 * [titleStars](#titleStars)
-* [hasCheese](#hasCheese)
+* [cheese](#cheese)
 * [isDead](#isDead)
 * [isShaman](#isShaman)
 * [isVampire](#isVampire)
@@ -61,11 +61,11 @@ Represents a player from the room.
 >How many stars in the title.
 >
 >**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-### <a id=hascheese></a>.hasCheese
+### <a id=cheese></a>.cheese
 
->Whether or not the player has a cheese.
+>Amount of cheese the player has.
 >
->**Type:**  [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+>**Type:**  [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 ### <a id=isdead></a>.isDead
 
 >Whether or not the player is dead.

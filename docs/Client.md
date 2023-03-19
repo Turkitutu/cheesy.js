@@ -33,6 +33,7 @@ Represents a client that connects to Transformice.
 * [leaveChat](#leaveChat)
 * [sendChatMessage](#sendChatMessage)
 * [startHeartbeat](#startHeartbeat)
+* [getFriendList](#getFriendList)
 * [start](#start)
 * [disconnect](#disconnect)
 #### Events
@@ -301,6 +302,12 @@ Represents a client that connects to Transformice.
 
 >Sends a packet every 15 seconds to stay connected to the game.
 >
+### <a id=getfriendlist></a>Client.getFriendList()
+
+>Request and get friendlist.
+>
+>
+> **Return :**  [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**<** [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**<** [`Friend`](Friend.md)**>****>**
 ### <a id=start></a>Client.start()
 
 >Starts the client.
